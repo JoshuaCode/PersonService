@@ -3,14 +3,12 @@ using System.Collections.Generic;
 
 namespace PersonService.Core.Models
 {
-    public class SouthernEmployee : Entity
+    public class Employee : Entity, IPerson
     {
-        public SouthernEmployee()
+        public Employee()
         {
             
         }
-
-       
 
         public string Scid { get;  set; }
         public string Sid { get;  set;}
@@ -78,7 +76,6 @@ namespace PersonService.Core.Models
         public string HourlyRate { get;  set; }
         public string StandardHours { get;  set; }
         public DateTime TerminationDateTime { get;  set; }
-        public bool IsSouthernPowerEmployee { get;  set; }
         public string VendorId { get;  set; }
     }
 }

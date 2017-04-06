@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace PersonService.Core.Models
 {
-    public class Person : Entity
+    public class Person : Entity, IPerson
     {
 
         public string FirstName { get; set; }
